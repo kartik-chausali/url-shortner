@@ -87,6 +87,25 @@ Visit the live application: **[URL Shortener](https://url-shortner-a72xbzrau-kar
     "totalClicks": 1,
     "lastAccessed": 1732622832689}
    ```
-   
+---
+## Sample deployed endpoints
+
+1. Endpoint
+   ```bash
+   GET https://url-shortner-a72xbzrau-kartik-chausalis-projects.vercel.app/
+   ```
+   Response : sample helow route
+
+2. Endpoint
+   ```bash
+   GET https://url-shortner-a72xbzrau-kartik-chausalis-projects.vercel.app/l7Xg8alYr
+   ```
+   Response : shortend url redirected to original url (youtube.com)
+
+3. Endpoint
+   ```bash
+   GET https://url-shortner-a72xbzrau-kartik-chausalis-projects.vercel.app/url/stats/l7Xg8alYr
+   ```
+   Response: returns total Clicks and last accessed timestamp for youtube.com
 
 
