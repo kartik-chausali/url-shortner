@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express();
 const rateLimit = require('express-rate-limit')
-const urlRoute = require('./routes/urlRoute')
-const url = require('./models/url');
+const urlRoute = require('../routes/urlRoute')
+const url = require('../models/url');
 require('dotenv').config()
 
 const limit = rateLimit({
@@ -16,7 +16,7 @@ const limit = rateLimit({
 app.use(limit)
 app.use(express.json())
 
-const {connectDB} = require('./dbconnect')
+const {connectDB} = require('../dbconnect')
 
 
 connectDB(process.env.DB_URL).then(()=> console.log("connected to db"));
