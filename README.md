@@ -15,6 +15,9 @@ Visit the live application: **[URL Shortener](https://url-shortner-a72xbzrau-kar
 - Generate a short URL for a given original URL.
 - Redirect users to the original URL when accessing the short URL.
 - Track the number of times a short URL is accessed and last accessed timestamp of short URL.
+- Rate Limiting for limited number of request for a client in a minute.
+- Indexing for faster mongodb lookups.
+- Dockerized using Docker.
 
 ---
 
