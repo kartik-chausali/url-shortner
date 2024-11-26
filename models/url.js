@@ -14,6 +14,8 @@ const urlSchema = new mongoose.Schema({
    clicks: [{timestamp:{type:Number} }],
 }, {timestamps:true})
 
+urlSchema.index({shortId:1});
+
 const url = mongoose.model('url', urlSchema);
 
 module.exports = url
