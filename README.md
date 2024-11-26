@@ -29,5 +29,64 @@ Visit the live application: **[URL Shortener](https://your-deployed-url.com)**
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/url-shortener.git
+   git clone https://github.com/kartik-chausali/url-shortner.git
    cd url-shortener
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the application:
+   ```bash
+   npm start
+
+### 🛠️ Using Docker
+
+1. Build the Docker image:
+   ```bash
+   docker build -t url-shortener .
+2. Run the container:
+   ```bash
+   docker run -p 4000:4000 --env-file .env url-shortener
+
+---
+
+## 🔗 API Endpoints
+
+1. Create a Short URL
+   
+   Endpoint:
+   ```bash
+   POST http://localhost:4000/url
+   ```
+   Request Body:
+   ```bash
+   {"url": "https://www.youtube.com"}
+   ```
+   Response:
+   ```bash
+   {"id" : "xYgh"}
+   ```
+#### Note: above response id is important to access other routes.
+
+2. Redirect to Original URL
+
+   Endpoint:
+   ```bash
+   GET http://localhost:4000/:id
+   ```
+   Response: Redirects to the original URL (https://www.youtube.com).
+
+3. Retrieve Short URL Details
+   
+   Endpoint:
+   ```bash
+   GET http://localhost:4000/url/stats/:id
+   ```
+   Response:
+   ```bash
+   {
+    "totalClicks": 1,
+    "lastAccessed": 1732622832689}
+   ```
+   
+
+
