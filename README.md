@@ -6,7 +6,7 @@ A simple URL shortener service built with Node.js, Express, and MongoDB. This ap
 
 ## 🚀 Deployed Application
 
-Visit the live application: **[URL Shortener](https://your-deployed-url.com)**
+Visit the live application: **[URL Shortener](https://url-shortner-a72xbzrau-kartik-chausalis-projects.vercel.app/)**
 
 ---
 
