@@ -35,5 +35,7 @@ app.get('/:shortId', async(req, res)=>{
     res.redirect(result.originalUrl)
 })
 
-
+app.get('/', (req, res)=>{
+    return res.json("sample hellow route")
+})
 app.listen(process.env.PORT, ()=> console.log("server connected"));
